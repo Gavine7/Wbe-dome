@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="学习是一个生活！！" />
+		<!--对于搜索到的页面进行展示的标题下面的描述-->
+		<meta name="keywords" content="学习，经济舱" />
+		<!--搜索时的关键词，用关键词进行的-->
+		<title> Gavine</title>
+		<!-- 标题 -->
+		<link rel="icon" href="images/app.png">
+		<!--图标网站的-->
+	</head>
+	<body>
+		<h1> 学习是什么?</h1>
+		<div>什么是快乐星球！！</div>
+		<span> 快乐星球是什么?</span>
+		<hr />
+		<!--水平线 <hr /> -->
+		<h3><mark>赤壁赋-----苏轼</mark></h3>
+		<!-- &nbsp;实现空格	  -->
+		<!-- <br />可以实现一个回车的效果！ -->
+		<p>壬戌之秋，七月既望，苏子与客泛舟游于赤壁之下。清风徐来，水波不兴。举酒属客，诵明月之诗，歌窈窕之章。少焉，月出于东山之上，徘徊于斗牛之间。白露横江，水光接天。纵一苇之所如，凌万顷之茫然。浩浩乎如冯虚御风，而不知其所止；飘飘乎如遗世独立，羽化而登仙。
+		</p>
+		<p>于是饮酒乐甚，扣舷而歌之。歌曰：“桂棹兮兰桨，击空明兮溯流光。渺渺兮予怀，望美人兮天一方。”客有吹洞箫者，倚歌而和之。其声呜呜然，如怨如慕，如泣如诉；余音袅袅，不绝如缕。舞幽壑之潜蛟，泣孤舟之嫠妇。
+		</p>
+		<p>　苏子愀然，正襟危坐，而问客曰：“何为其然也？”客曰：“‘月明星稀，乌鹊南飞。’此非曹孟德之诗乎？西望夏口，东望武昌，山川相缪，郁乎苍苍，此非孟德之困于周郎者乎？方其破荆州，下江陵，顺流而东也，舳舻千里，旌旗蔽空，酾酒临江，横槊赋诗，固一世之雄也，而今安在哉？况吾与子渔樵于江渚之上，侣鱼虾而友麋鹿，驾一叶之扁舟，举匏樽以相属。寄蜉蝣于天地，渺沧海之一粟。哀吾生之须臾，羡长江之无穷。挟飞仙以遨游，抱明月而长终。知不可乎骤得，托遗响于悲风。”
+		</p>
+		<p>苏子曰：“客亦知夫水与月乎？逝者如斯，而未尝往也；盈虚者如彼，而卒莫消长也。盖将自其变者而观之，则天地曾不能以一瞬；自其不变者而观之，则物与我皆无尽也，而又何羡乎！且夫天地之间，物各有主，苟非吾之所有，虽一毫而莫取。惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色，取之无禁，用之不竭。是造物者之无尽藏也，而吾与子之所共适。”
+		</p>
+		<p>客喜而笑，洗盏更酌。肴核既尽，杯盘狼籍。相与枕藉乎舟中，不知东方之既白。</p>
+		<div><b><i>我想现在最让人记忆深刻的就是‘知不可乎骤得，托遗响于悲风’，‘哀吾生之须臾，羡长江之无穷’</i></b></div>
+		<hr />
+
+		<h2>来段代码</h2>
+		<pre style="font-size: 30px;">
+			<!-- 与<p>的区别字体是等宽字体，会保留空格和回车 -->
+	#include &lt;iostream&gt;
+	using namespace std;
+	int main ()
+	{
+		int a, b;
+		cin &gt;&gt; a &gt;&gt; b;
+		<!-- &lt;是小于符号，&gt;是大于符号 -->
+		cout&lt;&lt;a + b&lt;&lt;endl;
+		return 0;
+	 }
+	</pre>
+		<br />
+		<br />
+		<h1>Hello World!!</h1>
+		<img width="350" height="350" src="images/mountain.jpg" alt="大山" />
+		<!-- alt 是显示网不好的时候加载不出来图片的一个解释图片的含义的东西 -->
+		<img width="100" height="100" src="images/3.jpg" alt="goat" />
+		<img width="100" height="100" src="images/3.jpg" alt="goat" />
+		<img width="350" height="350" src="images/3.jpg" alt="goat" />\
+		<hr />
+		<hr />
+		<hr />
+		<h1> Audios</h1>
+		<!-- 要加controls 才能播放音乐 -->
+		<audio controls src="aodios/经济舱.mp3">无法播放</audio>
+		<hr />
+		<audio controls>
+			<source src="aodios/逆时针向.mp3" type="audio/mpeg" />
+			<source src="aodios/经济舱.mp3" type="audio/mpeg" />
+		</audio>
+		<!-- 这个是无法播放第一音乐的时候播放第二个音乐！ -->
+		<hr />
+		<h1>视频video 英文歌来自coldpaly的up&up</h1>
+		<h2> 两个简单的视频</h2>
+		<h3>音乐视频</h3>
+		<video controls width="500" src="videos/video2.mp4"></video>
+		<video controls width="500" src="videos/up&up.mp4"></video>
+		<hr />
+		<h6> 另外播放一种形式</h6>
+		<video width="500" controls>
+			<!-- 还是一样五方播放的时候在播放第二个！ -->
+			<source src="videos/up&up.mp4" type="video/mp4">
+			<source src="videos/video2.mp4" type="video/mp4">
+			< </video>\
+				<hr />
+				<!--
+				<video width="500" autoplay>
+					<!-- autoplay 自动播放的 -->
+				<source src="videos/up&up.mp4" type="video/mp4">
+				< </video>
+					<hr />
+					<hr />
+					<h2> <mark>超链接</mark></h2>
+					<!-- target ="_blank" 是打开新的标签页打开网站-->
+					<a href="https://www.baidu.com" target="_blank">百度</a><br />
+					<a href="https://github.com/Gavine7/Wbe-dome" target="_blank"><mark><i>Gavine的Github</i></mark><img
+							width="50" src="images/3.jpg" alt="goat" />
+						<!-- 利用图像来进入新的网站 -->
+					</a>
+					<br />
+					<a href="/111.html">111</a>
+					<br />
+					<hr />
+					<hr />
+					<h2> 表单 Form</h2>
+					<!-- action 后端的函数地址 -->
+					<!-- <form action=""></form> -->
+					<form action="/111.html">
+						<label for="usename">用户名</label>
+						<input placeholder="用户名" type="text" required minlength="2" maxlength="6" name="Gavine"
+							id="usename" />
+						<br />
+						<label for="age"> 年龄</label>
+						<input placeholder="年龄" type=" number" required name="age" id="age" />
+						<br />
+						<label for="email">邮箱</label>
+						<input placeholder="邮箱" type="email" required name="email" id="email" />
+						<br />
+						<label for="password">密码</label>
+						<input placeholder="密码" type="password" required name="password" id="password" />
+						<br />
+						<label for="cpp">cpp</label>
+						<input type="radio" name="lang" value="cpp" id="cpp" />
+						<br />
+						<label for="java">java</label>
+						<input type="radio" name="lang" value="java" id="java" />
+						<br />
+						<label for="python">python</label>
+
+						<input type="radio" name="lang" value="python" id="python" />
+						<br />
+						<label for="resume"></label>
+						<textarea name="resume" id="resume" rows="20" cols="30">请描述一下自己的能力...</textarea>
+						<br />
+						<label for="lang">编译语言</label>
+						<select> name="lang" id="lang">
+							<option value=""> 请选择</option>
+							<option value="Cpp">Cpp</option>
+							<option value="Java">Java</option>
+							<option value="python">python</option>
+							<!-- <option selected 默认选择  value="Cpp"></option> -->
+						</select>
+						<br />
+						<button type="submit">提交</button>
+					</form>
+					<hr />
+					<hr />
+					<h2> 列表 &nbsp;List</h2>
+					<ul>
+						<li> first</li>
+						<li> second</li>
+						<li> third</li>
+					</ul>
+					<br />
+					<ol>
+						<li> first</li>
+						<li> second</li>
+						<li> third</li>
+					</ol>
+					<br />
+					<ul>
+						<li>
+							知识点
+							<ul>
+								<li>
+									1.1安装要用到的编译器；
+								</li>
+								<li>
+									1.2 基础知识点总结；
+									<ul>
+										<li>
+											1.2.1文件结构
+										</li>
+										<li>
+											1.2.2文本标签
+										</li>
+									</ul>
+								</li>
+								<li>
+									1.3 Web官方文档地址。
+								</li>
+							</ul>
+						</li>
+					</ul>
+	</body>
+</html>
+</!DOCTYPE>
