@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Gavine</title>
+	</head>
+	<body>
+		<h1><i><mark>---个人信息---</mark></i></h1>
+		<form action="">
+			<label for="usename">姓名:</label>
+			<input placeholder="请输入你的姓名" type="text" required minlength="2" maxlength="6" name="Gavine" id="usename" />
+			<br />
+			<label for="age"> 年龄:</label>
+			<input type="number" value="21" id="age" max="100" min="1" step="1" required="">
+			<br />
+			<label for="birthday">出生日期:</label>
+			<input type="datetime-local" required>
+			<br />
+			<label for="email">Email:</label>
+			<input placeholder="Email" type="email" required name="email" id="email" />
+			<br />
+			<label for="password">密码:</label>
+			<input placeholder="密码" type="password" required name="password" id="password" />
+			<br />
+			<label for="lang">个人主页:</label>
+			<input placeholder="请输入主页的链接..." type="text" required />
+			<br />
+			<label for="lang">个人简历:</label>
+			<br />
+			<textarea name="resume" id="resume" rows="10" cols="30">请描述一下自己...</textarea>
+			<br />
+			<label for="lang">熟练的编译语言</label>
+			<select> name="lang" id="lang">
+				<option value=""> 请选择</option>
+				<option value="Cpp">Cpp</option>
+				<option value="Java">Java</option>
+				<option value="python">python</option>
+				<!-- <option selected 默认选择  value="Cpp"></option> -->
+			</select>
+			<br />
+			<button type="reset">重置</button>
+			<button type="submit">提交</button>
+		</form>
+	</body>
+</html>
