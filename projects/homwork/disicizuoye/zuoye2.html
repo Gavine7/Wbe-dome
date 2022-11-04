@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Gavine</title>
+		<style>
+			div {
+				width: 150px;
+				height: 200px;
+				background: hotpink;
+				transition: width:2s, height:2s, tranform:2s;
+				padding: 30px;
+				animation: myrabibit 5s infinite;
+				position: relative;
+				font-size: 30px;
+				color: aqua;
+			}
+
+			.gd {
+				width: 100px;
+				height: 100px;
+				background-color: hotpink;
+				border-radius: 10px;
+				transition: width 2s, height 2s, transform 2s;
+				margin-left: 15%;
+				margin-top: 3%;
+				text-align: center;
+				line-height: 100px;
+				position: relative;
+				display: block;
+				z-index: 1;
+				overflow: hidden;
+			}
+
+			.gd:hover {
+				width: 500px;
+				height: 100px;
+				transform: rotate(0deg);
+			}
+
+			.d-d {
+				width: 150px;
+				height: 100px;
+				background: hotpink;
+				position: absolute;
+				border-radius: 10px;
+				right: 20px;
+				top: 20px;
+				z-index: 3;
+			}
+
+			.img1 {
+				width: 100px;
+				top: 50px;
+				right: 0px;
+				position: absolute;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="gd">访 客
+			<!-- <a> 访 客</a> -->
+			<div class="d-d">
+				<img class="img1" src="tupian/vector.png">
+			</div>
+		</div>
+		<div class="gd">学 生
+			<!-- <a>学 生</a> -->
+			<div class="d-d">
+				<img class="img1" src="tupian/student.png">
+			</div>
+		</div>
+	</body>
+</html>
