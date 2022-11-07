@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Gabine--作业一</title>
+	</head>
+	<body>
+		<p><b>这个月应发奖金是:</b></p>
+		<script>
+			var t1 = 0.1,
+				t2 = 0.075,
+				t3 = 0.05;
+			let t4 = 0.03,
+				t5 = 0.015,
+				t6 = 0.01;
+			let money = 374483;
+			let count;
+			if (money < 100000) {
+				count = t1 * money;
+			} else if (money < 200000) {
+				count = 100000 * t1 + t2 * (money - 100000);
+			} else if (money < 400000) {
+				count = 100000 * t1 + 100000 * t2 + (money - 200000) * t3;
+			} else if (money < 600000) {
+				count = 100000 * t1 + 100000 * t2 + 200000 * t3 + (money - 400000) * t4;
+			} else if (money < 1000000) {
+				count = 100000 * t1 + 100000 * t2 + 200000 * t3 + 200000 * t4 + (money - 600000) * t5;
+			} else {
+				count = 100000 * t1 + 100000 * t2 + 200000 * t3 + 200000 * t4 + 400000 * t5 + (money - 100) * t6;
+			}
+			document.write(count);
+		</script>
+	</body>
+</html>

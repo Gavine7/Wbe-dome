@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟教程(runoob.com)</title>
+	</head>
+	<body>
+
+		<p>创建 JavaScript 对象。</p>
+		<p id="demo"></p>
+
+		<button> 点击出现图片</button>
+		<script>
+			var car = {
+				url: "https://img1.baidu.com/it/u=538480179,710648624&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=511",
+				Name: "car"
+			};
+			document.getElementById("demo").innerHTML =
+				"<img src='" + car.url + "'>";
+
+			alert("<img src='" + car.url + "'>")
+		</script>
+
+	</body>
+</html>

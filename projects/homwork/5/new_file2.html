@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Gavine--9*9 multiplication table</title>
+	</head>
+	<body>
+		<script>
+			var row = 9;
+			var col = 9;
+			document.write("<b>乘法表背不到了!怎么办?</b></br>");
+			document.write("技术太菜,乱写一个!</br>");
+			document.write("<table border=\"1\">");
+			for (let i = 1; i <= row; i++) {
+				document.write("<tr>");
+				for (let j = 1; j <= col; j++) {
+					if (j <= i) {
+						document.write("<td>" + i + "*" + j + "=" + i * j + "</td>");
+					} else {
+						document.write("<td> </td>");
+					}
+				}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+		</script>
+	</body>
+</html>
