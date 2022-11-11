@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Gavine-实验四</title>
+		<style>
+			#out {
+				width: 1200px;
+				height: 600px;
+				background-color: antiquewhite;
+				border: 15px ridge rgba(211, 220, 50, .6);
+				position: relative;
+				margin: auto;
+			}
+
+			#in {
+				width: 600px;
+				height: 200px;
+				border: 10px dashed red;
+				border-radius: 10px;
+				margin: auto;
+				margin-top: 150px;
+				text-align: center;
+				font-size: 60px;
+			}
+
+			@keyframes myfirst {
+				0% {
+					background-color: red;
+					left: 300px;
+					bottom: 600px;
+				}
+
+				25% {
+					background-color: aqua;
+					left: 1100px;
+					bottom: 550px;
+				}
+
+				50% {
+					background-color: beige;
+					left: 1100px;
+					bottom: 150px;
+				}
+
+				75% {
+					background-color: blanchedalmond;
+					left: 200px;
+					bottom: 150px;
+				}
+
+				100% {
+					background-color: cadetblue;
+					left: 200px;
+					bottom: 550px;
+				}
+			}
+
+			#myfirst {
+				width: 100px;
+				height: 100px;
+				position: relative;
+				animation: myfirst 10s;
+				animation-iteration-count: infinite;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="out">
+			<div id="in">快乐跑道</div>
+		</div>
+		<img id="myfirst" src="pot/car.png">
+	</body>
+</html>
