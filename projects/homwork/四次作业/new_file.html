@@ -6,18 +6,23 @@
 		<style>
 			div {
 				text-align: center;
-				margin: 50px auto;
+				margin: 100px auto;
+				background-color: bisque;
+				/* color: aqua; */
+				height: 500px;
+				font-size: medium;
 			}
 
 			input {
-				height: 60px;
+				height: 80px;
 				width: 120px;
-				border-radius: 10px;
-				border: red 10px;
+				border-radius: 100px;
+				border: 100px;
 				font-size: 25px;
 				font-family: 黑体;
 				font-weight: 800px;
 				color: blueviolet;
+				background-color: rosybrown;
 			}
 		</style>
 	<body>
@@ -34,21 +39,21 @@
 			win1.onload = function() {
 				win1.document.title = "用户登录";
 			};
-			win1.document.write('用户名:  <input type="text" placeholder="请输入你的姓名...">\n' +
+			win1.document.write('用户名:  <input type="text" placeholder="姓名...">\n' +
 				'        <br><br>\n' +
-				'        密码: <input type="password" placeholder="请输入你的密码...">\n' +
+				'        密码: <input type="password" placeholder="密码...">\n' +
 				'        <br><br>' +
-				'        <input id ="t1" type="submit" value="立即注册" onclick="window.close()">\n');
+				'        <input id ="t1" type="submit" value="注册" onclick="window.close()">\n');
 			win1.focus();
 		})
 		ops.addEventListener('click', function() {
 			const win2 = window.open('', '', 'height=500,width=500');
-			win2.document.write('<h1>游客，你好！</h1>' +
-				'用户名:  <input type="text" placeholder="请输入你的姓名...">\n' +
+			win2.document.write('<h1>--欢迎登录--</h1>' +
+				'用户名:  <input type="text" placeholder="姓名...">\n' +
 				'        <br><br>\n' +
-				'        密码: <input type="password" placeholder="请输入你的密码...">\n' +
+				'        密码: <input type="password" placeholder="密码...">\n' +
 				'        <br><br>' +
-				'        <input id ="t1" type="submit" value="立即登录" onclick="window.close()">\n');
+				'        <input id ="t1" type="submit" value="登录" onclick="window.close()">\n');
 			win2.focus();
 		})
 	</script>
