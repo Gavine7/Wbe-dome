@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>---Gavine---</title>
+	</head>
+	<style>
+		h1 {
+			margin-left: 50px;
+			margin-top: 30px;
+			color: rebeccapurple;
+		}
+	</style>
+	<body>
+		<h1>复制大法判断</h1>
+		<div>
+			第一个
+			<input id="s" type="text">
+
+			<button><mark>复制</mark></button>
+			&nbsp;第二个
+			<input id="ss" type="text">
+		</div>
+		<script>
+			var s = document.querySelector('#s');
+			var ss = document.querySelector('#ss');
+			var btn = document.querySelector('button');
+			btn.addEventListener("click", function() {
+				ss.value = s.value;
+			})
+		</script>
+	</body>
+</html>

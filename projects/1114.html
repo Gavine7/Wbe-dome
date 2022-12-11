@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var var1 = 1; // 不可配置全局属性
+			var2 = 2; // 没有使用 var 声明，可配置全局属性
+			console.log(this.var1); // 1
+			console.log(window.var1); // 1
+			console.log(window.var2); // 2
+			delete var1; // false 无法删除
+			console.log(var1); //1
+			delete var2;
+			console.log(delete var2); // true
+			console.log(var2); // 已经删除 报错变量未定义
+			function myfuntion() {
+				alert("sdadad");
+			}
+
+			function myFunction() {
+				var x;
+				var r = confirm("按下按钮!");
+				if (r == true) {
+					x = "你按下了\"确定\"按钮!";
+				} else {
+					x = "你按下了\"取消\"按钮!";
+				}
+				document.getElementById("demo").innerHTML = x;
+			}
+
+			function myFunctions() {
+				var x;
+				var person = prompt("请输入你的名字", "Harry Potter");
+				if (person != null && person != "") {
+					x = "你好 " + person + "! 今天感觉如何?";
+					document.getElementById("demo").innerHTML = x;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="myFunctions()">点我</button>
+		<p id="demo"></p>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Gavine</title>
+		<style>
+			.box {
+				width: 500px;
+				line-height: 10 0px;
+				margin: 100px auto;
+				background-color: rebeccapurple;
+				color: #ff0000;
+				text-align: center;
+				font-size: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">现在的时间是</div>
+		<script>
+			var box = document.querySelector('.box');
+			setInterval(getTime, 1000);
+
+			function getTime() {
+				//3.利用时间函数获取系统时间
+				var time = new Date();
+				var year = time.getFullYear(); //年
+				year = year < 10 ? '0' + year : year;
+				var mon = time.getMonth() + 1; //月
+				mon = mon < 10 ? '0' + mon : mon;
+				var week = "星期" + "日一二三四五六".charAt(new Date().getDay());
+				week = week < 10 ? '0' + week : week;
+				var date = time.getDate(); //日
+				date = date < 10 ? '0' + date : date;
+				var h = time.getHours(); //小时
+				h = h < 10 ? '0' + h : h;
+				var m = time.getMinutes(); //分钟
+				m = m < 10 ? '0' + m : m;
+				var s = time.getSeconds(); //秒
+				s = s < 10 ? '0' + s : s;
+				box.innerHTML = year + '年' + mon + '月' + date + '日' + '' + h + ':' + m + ':' + s + ' ' + week;
+			}
+		</script>
+	</body>
+</html>

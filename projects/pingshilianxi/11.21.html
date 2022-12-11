@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟教程(runoob.com)</title>
+		<script>
+			function newDoc() {
+				window.location.assign("https://www.runoob.com")
+			}
+
+			function openwin() {
+				mywindow = window.open(' ', ' ', width = 1000, innerHeight)
+				mywindow = document.write("<p>这是新的窗口<p>")
+				mywindow.focus();
+			}
+
+			function opewin() {
+				mywindw = window.open("https://www.naenano.cn/home")
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="加载新文档" onclick="newDoc()">
+		<input type="button" value="打开新窗口" onclick="openwin()" />
+		<input type="button" value="打开新的地址" onclick="opewin()" />
+	</body>
+</html>

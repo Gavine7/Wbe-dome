@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>--Gavine--</title>
+		<style type="text/css">
+			canvas {
+				border: 10px solid rebeccapurple;
+			}
+		</style>
+	</head>
+	<canvas id="myCanvas" width="500" height="450"></canvas>
+	<script>
+		var canvas = document.getElementById('myCanvas');
+		var ctx = canvas.getContext('2d');
+		ctx.fillStyle = "red";
+		var img = new Image();
+		img.src = 'aixin.png';
+		img.onload = function() { //绘制
+			// ctx.clearRect(500, 450, canvas.width, canvas.height);
+			ctx.drawImage(img, 150, 150);
+			ctx.clearRect(500, 450, canvas.width, canvas.height);
+		}
+		for (var i = 0; i < 1000; i++) {
+			setInterval(img.onload, 10);
+		}
+		for (var i = 0; i < 1000; i++) {
+			setTimeout(function() {
+				ctx.drawImage(img, 150, 150);
+				setTimeout(function() {
+
+					ctx.clearRect(0, 0, canvas.width, canvas.height);
+					ctx.drawImage(img, 200, 200);
+				}, 500);
+			}, 500);
+		}
+		// setTimeout(function() {
+		// 	ctx.drawImage(img, 150, 150);
+		// 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+		// 	ctx.drawImage(img, 200, 200);
+		// }, 10);
+	</script>
+
+</html>

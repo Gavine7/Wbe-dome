@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Gavine</title>
+		<style>
+			div {
+				text-align: center;
+				margin: 50px auto;
+			}
+
+			input {
+				height: 60px;
+				width: 120px;
+				border-radius: 10px;
+				border: red 10px;
+				font-size: 25px;
+				font-family: 黑体;
+				font-weight: 800px;
+				color: blueviolet;
+			}
+		</style>
+	<body>
+		<div>
+			<h1>--这是主页--</h1>
+			<input id="op" type="button" value="注册"> &nbsp;&nbsp;|&nbsp;&nbsp; <input id="ops" type="button" value="登录">
+		</div>
+	</body>
+	<script>
+		var op = document.querySelector('#op');
+		var ops = document.querySelector('#ops');
+		op.addEventListener('click', function() {
+			var win1 = window.open('', '', 'height=500,width=500');
+			win1.onload = function() {
+				win1.document.title = "用户登录";
+			};
+			win1.document.write('用户名:  <input type="text" placeholder="请输入你的姓名...">\n' +
+				'        <br><br>\n' +
+				'        密码: <input type="password" placeholder="请输入你的密码...">\n' +
+				'        <br><br>' +
+				'        <input id ="t1" type="submit" value="立即注册" onclick="window.close()">\n');
+			win1.focus();
+		})
+		ops.addEventListener('click', function() {
+			const win2 = window.open('', '', 'height=500,width=500');
+			win2.document.write('<h1>游客，你好！</h1>' +
+				'用户名:  <input type="text" placeholder="请输入你的姓名...">\n' +
+				'        <br><br>\n' +
+				'        密码: <input type="password" placeholder="请输入你的密码...">\n' +
+				'        <br><br>' +
+				'        <input id ="t1" type="submit" value="立即登录" onclick="window.close()">\n');
+			win2.focus();
+		})
+	</script>
+</html>
