@@ -6,13 +6,16 @@
 	</head>
 	<style>
 		div {
-			margin-left: 50px;
+			margin-right: 50px;
+			margin-left: 700px;
 			margin-top: 30px;
 			color: bisque;
+			/* background-color: antiquewhite; */
 		}
 
 		h1 {
-			margin-left: 50px;
+			margin-right: 50px;
+			margin-left: 700px;
 			margin-top: 30px;
 			color: aqua;
 		}
@@ -20,31 +23,31 @@
 	<body>
 		<h1>---注册---</h1>
 		<div>
-			<input id="ip1" type="text" placeholder="请输入你的名字">
+			<input id="s" type="text" placeholder="请输入你的名字">
 			<div id="i1" style="color:red;display:none">用户名不能为空</div>
 			<br>
-			<input id="ip2" type="password" placeholder="请输入你的密码!"><br>
-			<input id="ip3" type="password" placeholder="请输入你的相同密码!">
+			<input id="ss" type="password" placeholder="请输入你的密码!"><br>
+			<input id="s3" type="password" placeholder="请输入你的相同密码!">
 			<div id="i2" style="color:red;display:none">两次密码必须相同</div>
 			<br><br>
 			<button style="margin: 5px 50px" style="border: 10px;">提交</button>
 			<br><br>
 		</div>
 		<script>
-			var ip1 = document.querySelector('#ip1');
-			var ip2 = document.querySelector('#ip2');
-			var ip3 = document.querySelector('#ip3');
+			var s = document.querySelector('#s');
+			var ss = document.querySelector('#ss');
+			var s3 = document.querySelector('#s3');
 			var i1 = document.querySelector('#i1');
 			var i2 = document.querySelector('#i2');
-			ip1.addEventListener('blur', function() {
-				if (ip1.value === "") {
+			s.addEventListener('blur', function() {
+				if (s.value === "") {
 					i1.style.display = "block";
 				} else {
 					i1.style.display = "none";
 				}
 			})
-			ip3.addEventListener('blur', function() {
-				if (ip2.value != ip3.value) {
+			s3.addEventListener('blur', function() {
+				if (ip2.value != s3.value) {
 					i2.style.display = "block";
 				} else {
 					i2.style.display = "none";
