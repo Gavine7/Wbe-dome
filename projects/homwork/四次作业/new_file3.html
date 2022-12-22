@@ -9,18 +9,19 @@
 			margin-left: 50px;
 			margin-top: 30px;
 			color: rebeccapurple;
+			background-color: aqua;
 		}
 	</style>
 	<body>
 		<from action="#" method="post">
-			<p style="color: red;font-size: larger;"><b>&emsp;&emsp;&emsp;&emsp;&emsp;<h1>--网页注册--</h1></b></p><br>
+			<p style="color: red;font-size: larger;"><b>&emsp;&emsp;&emsp;&emsp;&emsp;<h1>--注册--</h1></b></p><br>
 			<table cellpadding="2" align="center">
 				<tr>
-					<td align="right">邮箱：</td>
+					<td align="right">姓名：</td>
 					<td><input type="text" name="huiyuanyuoxiang" </td>
 				</tr>
 				<tr>
-					<td align="right">会员名：</td>
+					<td align="right">常用邮箱：</td>
 					<td><input type="text" name="huiyuanming" </td>
 				</tr>
 				<tr>
@@ -39,11 +40,43 @@
 					</td>
 				</tr>
 				<tr>
+					<td align="right">血型：</td>
+					<td>
+						<input type="radio" name="xue" value="O"> O型血
+						<input type="radio" name="xue" value="A"> A型血
+						<input type="radio" name="xue" value="B"> B型血
+						<input type="radio" name="xue" value="AB"> AB型血
+					</td>
+				</tr>
+				<tr>
+					<td align="right">性格：</td>
+					<td>
+						<input type="radio" name="性格" value="w"> 热情大方
+						<input type="radio" name="性格" value="ww">温柔体贴
+						<input type="radio" name="性格" value="www">多情善感
+						<input type="radio" name="性格" value="AB">外向开朗
+					</td>
+				</tr>
+				<tr>
+					<td align="right">文件：</td>
+					<!-- <td><input type="text" name="dome" style="width: 300px;" </td> -->
+					<form enctype="multipart/form-data" method="post">
+						<td> <input type="file" id="file-input" name="fileContent"></td>
+
+					</form>
+				</tr>
+				<tr>
+					<td align="right">城市：</td>
+					<td><input type="city" name="city" style="<script type=" text/javascript">
+						</script>
+					</td>
+				</tr>
+				<tr>
 					<td align="right">联系电话：</td>
 					<td><input type="text" name="huiyuanyuoxiang" style="width: 250px;" </td>
 				</tr>
 				<tr>
-					<td align="right">个人简绍：</td>
+					<td align="right">个人简介：</td>
 					<td><input type="text" name="huiyuanming" style="width: 250px;height: 50px;" </td>
 				</tr>
 			</table>
