@@ -66,9 +66,23 @@
 					</form>
 				</tr>
 				<tr>
-					<td align="right">城市：</td>
-					<td><input type="city" name="city" style="<script type=" text/javascript">
-						</script>
+					<td>城市:</td>
+					<td>
+						<select id="city">
+							<option value="成都市">成都市</option>
+							<option value="北京市">北京市</option>
+							<option value="绵阳市">绵阳市</option>
+							<option value="重庆市">重庆市</option>
+							<option value="上海市">上海市</option>
+							<option value="杭州市">杭州市</option>
+							<option value="苏州市">苏州市</option>
+							<option value="西安市">西安市</option>
+							<option value="长沙市">长沙市</option>
+						</select>
+						<!-- </td> -->
+						<!-- <td align="right">城市：</td>
+					<!-- <td><input type="city" name="city" style="<script type=" text/javascript"> -->
+						<!-- </script> -->
 					</td>
 				</tr>
 				<tr>
@@ -90,7 +104,8 @@
 				}
 			</style>
 			<center><button>确认并提交</button></center>
-
+			<button><input type="reset" id="re" value="重置" onclick="myRe()"></button>
+			</td>
 		</from>
 	</body>
 </html>
